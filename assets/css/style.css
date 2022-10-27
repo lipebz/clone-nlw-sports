@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;700;900&display=swap');
+
+p {
+    margin: 0;
+}
+body {
+    background: #121214 url('/assets/images/Fundo.svg') no-repeat;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    cursor: default;
+}
+
+.logo {
+    margin: 4rem auto;
+    display: block;
+}
+
+.titulo {
+    font-weight: 900;
+    font-size: 4.3rem;
+    text-align: center;
+    line-height: 77px;
+    letter-spacing: -1.43px;
+}
+
+.duo {
+    background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    background-clip: text;
+        -webkit-background-clip: text;
+    text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+
+}
+
+.container-scroll-horizontal {
+    margin-top: 3rem;
+    overflow-x: auto;
+    z-index: 3;
+
+    
+}
+
+.container-cards-games {
+    display: flex;
+    column-gap: 1.3rem;
+    flex-wrap: nowrap;
+    width: max-content;
+    margin: 1rem 0;
+    
+}
+
+.card-game {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+    width: 190px !important;
+    cursor: pointer;   
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .3s;
+
+}
+
+.card-game:nth-child(1) {
+    z-index: 9999;
+}
+
+.card-game:hover {
+    transform: scale(1.1);
+}
+
+.overlay {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(2,0,36,0.836029822085084) 85%);
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.overlay h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-shadow: 2px 2px #222222;
+
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.controls button {
+    position: absolute;
+    background: none;
+    color: rgb(168, 168, 168);
+    border: none;
+    top: 9rem;
+    font-size: 3rem;
+    transition: 0.5s;
+}
+
+.controls button:hover {
+    color: rgb(98, 98, 98);
+}
+
+.controls button:nth-child(1) {
+    left: -85px;
+}
+.controls button:nth-child(2) {
+    right: -85px;
+}
+
+
+.container-anuncio {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 4rem 0;
+
+}
+.container-anuncio-header {
+    background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    width: 100%;
+    height: 6px;
+}
+
+.container-anuncio-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2A2634;
+    padding: 1.5rem 2rem;
+    
+}
+
+.container-anuncio-body h2 {
+    font-weight: 700;
+}
+
+.container-anuncio-body p {
+    color: #A1A1AA;
+    font-weight: 300;
+}
+
+.btn {
+    height: fit-content;
+    padding: 10px 15px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #8B5CF6;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #744bd2;
+}
+
+.btn-primary:active {
+    background: #5736a2 !important;
+}
+
+.btn-primary i {
+    margin: 5px;
+}
+
+ /*------scroll bar---------------------*/
+  
+ ::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #52596500;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #52596500;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #5a627000;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  
+  
+  /*---------------------------- */
